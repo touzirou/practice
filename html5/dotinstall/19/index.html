@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf8">
+        <title>はじめてのHTML</title>
+    </head>
+
+    <body>
+<!--
+textarea
+button
+-->
+        <article>
+            <h1>アンケート</h1>
+            <form action="survey.php" method="post">
+                <p>メールアドレス: <input type="text" name="email" disabled></p>
+                <p>
+                    コメント: 
+                    <textarea name="comment" cols="40" rows="5">コメント</textarea>
+                </p>
+                <p>
+                    <button type="submit"><strong>送信！</strong></button>
+                </p>
+                <p>
+                    <button type="button">処理をする！</button>
+                </p>
+                <p><input type="submit" value="送信！" disabled></p>
+            </form>
+        </article>
+    </body>
+</html>

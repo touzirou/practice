@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf8">
+        <title>はじめてのHTML</title>
+    </head>
+
+    <body>
+<!--
+input 
+    checkbox
+    radio
+label
+-->
+        <article>
+            <h1>アンケート</h1>
+            <form action="survey.php" method="post">
+                <p>メールアドレス:<input type="text" name="email"></p>
+                <p>
+                    Phone:
+                    <label><input type="checkbox" name="phone" value="android" checked> Android</label>
+                    <input type="checkbox" name="phone" value="iphone" id="iphone"> <label for="iphone">iPhone</label>
+                </p>
+                <p>
+                    Color:
+                    <input type="radio" name="color" value="red" checked> Red
+                    <input type="radio" name="color" value="blue"> Blue
+                </p>
+                <p><input type="submit" value="送信！"></p>
+            </form>
+        </article>
+    </body>
+</html>

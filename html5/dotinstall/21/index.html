@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang='ja'>
+    <head>
+        <meta charset='utf8'>
+        <title>はじめてのHTML</title>
+    </head>
+    <body>
+<!--
+select
+option
+-->
+
+        <article>
+            <h1>アンケート</h1>
+            <form action="survey.php" method="post">
+                <p>メールアドレス: <input type="text" name="email"></p>
+                <!--
+                    <p>City:
+                        <select name="city">
+                            <option value="tokyo">Tokyo</option>
+                            <option value="nagoya">Nagoya</option>
+                            <option value="osaka" selected>Osaka</option>
+                            <option value="kyoto">Kyoto</option>
+                            <option value="fukuoka">Fukuoka</option>
+                        </select>
+                    </p>
+                -->
+                <p>City:
+                    <select name="city" multiple size="5">
+                        <option value="tokyo">Tokyo</option>
+                        <option value="nagoya">Nagoya</option>
+                        <option value="osaka">Osaka</option>
+                        <option value="kyoto">Kyoto</option>
+                        <option value="fukuoka">Fukuoka</option>
+                    </select>
+                </p>
+                <p><input type="submit" value="送信！"></p>
+        </article>
+    </body>
+</html>
