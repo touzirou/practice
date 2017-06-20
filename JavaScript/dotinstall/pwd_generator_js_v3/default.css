@@ -40,3 +40,19 @@ input[type="text"]{
     top: 4px;
     box-shadow: 0 0px;
 }
+
+fieldset{
+    margin-top: 40px;
+    border: 1px dashed #aaa;
+    border-radius: 5px;
+    text-align: left;
+}
+
+legend{
+    font-weight: bold;
+    padding: 0 10px;
+}
+
+fieldset p{
+    text-align: center;
+}
