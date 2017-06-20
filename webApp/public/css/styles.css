@@ -15,47 +15,8 @@ p {
   line-height: 2;
 }
 
-.btn {
-  display: block;
-  width: 200px;
-  line-height: 50px;
-  background: #606060;
-  text-align: center;
-  color: #f39800;
-  border-radius: 5px;
-  margin: 0 auto;
-  opacity: 0.9;
-}
-
-.btn:hover {
-  opacity: 1;
-}
-
 section {
   padding: 90px 0;
-}
-
-section:nth-child(odd) {
-  background: #f8f8f8;
-}
-
-section .container {
-  width: 820px;
-  margin: 0 auto;
-}
-
-section h2 {
-  font-size: 26px;
-  text-align: center;
-  margin: 0 0 30px;
-  font-weight: normal;
-}
-
-section:not(.call-to-action) h2:after {
-  display: block;
-  font-size: 18px;
-  color: #aaa;
-  padding-top: 10px;
 }
 
 /* header */
@@ -84,75 +45,66 @@ header h1 {
   margin-bottom: 50px;
 }
 
-/* features */
-.features h2:after {
-  content: '- Game List -';
+/* menu */
+.menu {
+  width: 100%;
 }
 
-.feature .desc {
-  width: 360px;
-}
-
-pull-right {
-  float: right;
-  padding-left: 40px;
-}
-
-pull-left {
-  float: left;
-  padding-right: 40px;
-}
-
-.row {
-  overflow: hidden;
-  margin-bottom: 90px;
-}
-
-row:last-child {
-  margin-bottom: 0;
-}
-
-.features h3 {
-  font-size: 24px;
-}
-
-/* voices */
-.voices h2:after {
-  content: '- User Voices -';
-}
-
-.user {
-  background: #ddd;
-  width: 250px;
-  box-sizing: border-box;
-  padding: 65px 40px 26px;
-  position: relative;
-}
-
-.user h3{
+ul.item {
+  list-style: none;
+  padding: 0 50px 0 50px;
+  margin: 0;
+  font-size: 0;
   text-align: center;
 }
 
-.voices > .container{
-  display: flex;
-  justify-content: space-between;
+ul.item li{
+  display: inline-block;
 }
 
-.voices h2 {
-  margin-bottom: 150px;
+ul.item li a{
+  display: inline-block;
+  background: #A0A0A0;
+  color: #0A0A0A;
+  width: 150px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 14px;
+  border-radius: 5px 5px 0px 0px;
+  opacity: 0.6;
+  margin: 0;
+} 
+
+.menu_item:hover {
+  background: #00A0A0;
+  color: #FFFFFF;
+  font-weight: bold;
+  opacity: 1.0;
 }
 
-/* call-to-action */
-
-.call-to-action {
-    background: #555;
-    background-size: cover;
-    text-align: center;
+.menu_item.active {
+  font-weight: bold;
+  opacity: 1.0;
 }
 
-.call-to-action h2{
-  color: #fff;
-  margin-bottom: 50px;
+.menu .contents {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+.menu_content {
+  text-align: left;
+  padding: 20px;
+  background: #A0A0A0;
+  height: 250px;
+  width: 710px;
+  font-size: 20px;
+  display: none;
+}
+
+.menu_content.active{
+  display: inline-block;
 }
 
 /* footer */
