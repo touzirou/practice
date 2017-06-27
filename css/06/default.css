@@ -1,0 +1,24 @@
+/*
+セレクタ
+擬似クラス
+*/
+
+/* 条件に合致した最初の要素にのみ適用 */
+ul li:first-child {color: skyblue;}
+
+/* 未訪問のリンクに対して適用 */
+a:link {color: violet;}
+
+/* 訪問済みのリンクに対して適用 */
+a:visited{color: orange;}
+
+/* マウスが乗った時に対して適用 */
+a:hover{color: pink;}
+
+/* クリックした時に適用 */
+a:active{color:red;}
+
+/* リンクに関する擬似クラスは必ず↑の順番で定義すること */
+
+/* フォーカスが当たった時に適用 */
+input:focus{ background: skyblue;}

@@ -1,0 +1,28 @@
+/*
+値
+- 長さ
+  - px
+  - em
+  - %
+- 色
+  - 名前
+  - RGB
+    - Red 0-f / 00-ff / 0-255 / 0%-100%
+    - Green
+    - Blue
+*/
+
+body {font-size: 16px;}
+
+/* 32px */
+h1 {font-size: 2em;}
+
+/* 24px */
+h2 {font-size: 150%;}
+
+h1 {color:blue;}
+h1 {color:#00f;}
+h1 {color:#0000ff;}
+h1 {color:rgb(0, 0, 255);}
+h1 {color:rgb(0%,0%,100%);}
+

@@ -1,0 +1,20 @@
+/*
+セレクタ
+詳細度
+  (a) style=""
+  (b) id
+  (c) 属性/疑似クラス
+  (d) 要素/疑似要素
+*/
+
+/* 0, 0, 0, 1 */
+a {color: skyblue !important;}
+
+/* 0, 0, 1, 1 */
+a.link {color:pink;}
+
+/* 0, 0, 1, 1 */
+a.search {color:orange;}
+
+/* 0, 1, 0, 1 */
+a#site {color:blue;}
