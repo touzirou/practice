@@ -7,11 +7,17 @@
 class MysqlConnector{
 
     private $mysqli;
-    private $config;
+    private $access_db;
+    private $database_name;
+    private $database_user;
+    private $database_password;
 
     // コンストラクタ
     function __construct(){
-        $this->config = parse_ini_file(__DIR__ . '/../conf/db.conf');
+        $this->access_db = getenv('REMOTE_DATABASE');
+        $this->database_name = getenv('DATABASE_NAME');
+        $this->database_user = getenv('DATABASE_USER');
+        $this->database_password = getenv('DATABASE_PASSWORD');
         $this->connect_db();
     }
 
@@ -42,7 +48,7 @@ class MysqlConnector{
      * @author rTsujimoto
      */
     private function connect_db(){
-        $this->mysqli = new mysqli($this->config['ACCESS_DB'], $this->config['DATABASE_USER'], $this->config['DATABASE_PASSWORD'], $this->config['DATABASE_NAME']);
+        $this->mysqli = new mysqli($this->access_db, $this->database_user, $this->database_password, $this->database_name);
         $this->mysqli->set_charset("utf8");
     }
 
