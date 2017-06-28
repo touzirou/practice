@@ -15,7 +15,7 @@ class MysqlConnector{
     // コンストラクタ
     function __construct(){
         $this->access_db = getenv('REMOTE_DATABASE');
-        $this->database_name = getenv('DATABASE_NAME');
+        $this->database_name = getenv('GAME_DATABASE_NAME');
         $this->database_user = getenv('DATABASE_USER');
         $this->database_password = getenv('DATABASE_PASSWORD');
         $this->connect_db();
