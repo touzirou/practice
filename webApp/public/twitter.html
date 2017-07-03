@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <title>twitter</title>
+</head>
+<body>
+    <p>
+        <h1>twitter</h1>
+    </p>
+    <p>
+        <table>
+            <tr>
+                <td><label for="count">出力件数</td>
+                <td><input type="text" id="count" value="20"></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><label for="condition">検索文字列</label></td>
+                <td><input type="text" id="condition"></td>
+                <td><input type="button" id="tweet_search" value="tweet検索"></td>
+            </tr>
+            <tr>
+                <td><label for="screen_name">ユーザ名</label></td>
+                <td><input type="text" id="screen_name"></td>
+                <td><input type="button" id="user_search" value="ユーザ検索"></td>
+            </tr>
+        </table>
+    </p>
+    <div id="result"></div>
+    <script src="https://code.jquery.com/jquery-3.0.0.js"></script>
+    <script src="https://code.jquery.com/jquery-migrate-3.0.0.js"></script>
+    <script src="js/twitter.js"></script>
+</body>
+</html>
