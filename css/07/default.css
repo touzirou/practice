@@ -1,0 +1,20 @@
+/*
+セレクタ
+擬似要素
+*/
+
+/* 最初の一行目のみ適用 */
+/*p:first-line {color:skyblue;}*/
+
+/* 最初の文字のみ適用 */
+/*p:first-letter {color:skyblue;}*/
+
+/* 要素の直前に付け加えたい場合 */
+p:before{
+    content: "--> ";
+}
+
+/* 要素の直後に付け加えたい場合 */
+p:after{
+    content: " <---"
+}

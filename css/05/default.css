@@ -1,0 +1,12 @@
+/*
+属性セレクタ
+*/
+
+/* 特定タグ(a)の内、特定の属性(title)があるもの */
+/*a[title] { color:skyblue;}*/
+
+/* 特定タグ(a)の内、特定属性(title)が特定の値(http://google.com)の場合 */
+/*a[href="http://google.com"] {color:orange;}*/
+
+/* 特定タグ(a)に特定属性(class)に特定の値(search)が"含まれている"場合 */
+a[class~="search"] {color:violet;}

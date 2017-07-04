@@ -1,0 +1,23 @@
+/*
+セレクタ {プロパティ名 : 値;}
+セレクタ {
+    プロパティ名: 値;
+    プロパティ名: 値;
+}
+
+* ユニバーサルセレクタ
+要素名 p h1 div
+#id
+.class
+*/
+
+/* 全ての要素に適用される */
+ /** {color: skyblue;} */
+
+h1 {color: skyblue;}
+
+/* id を指定する場合は id名の前に # を付加 */
+#first {color: orange;}
+
+/* class を指定する場合は class名の前に . を付加 */
+.points {color: violet;}
