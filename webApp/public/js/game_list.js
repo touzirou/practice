@@ -19,8 +19,14 @@ $(function(){
                 var tbody_tag = $("<tbody />");
                 h2_tag.append(key);
                 thead_tag.append('<tr><th class="category">カテゴリ</th><th>タイトル</th></tr>');
+                var before_name = "";
+                var before_jan = "";
                 game_list[key].forEach(function(game, index, ary){
-                    tbody_tag.append('<tr><td>' + game.cName + '</td><td>' + game.name + '</td></tr>');
+                    if(before_name != (game.cName + game.name) && before_jan != game.jan){
+                        tbody_tag.append('<tr><td>' + game.cName + '</td><td>' + game.name + '</td></tr>');
+                    }
+                    before_name = (game.cName + game.name);
+                    before_jan = game.jan;
                 });
                 table_tag.append(thead_tag, tbody_tag);
                 $('#result').append(h2_tag);
