@@ -58,7 +58,6 @@ class MysqlConnector{
      */
     private function query($sql){
         $result = $this->mysqli->query($sql);
-        $this->count = $result->num_rows;
         $data = array();
         while ($row = $result->fetch_assoc()) {
             $data[] = $row;
